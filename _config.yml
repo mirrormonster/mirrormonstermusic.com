@@ -26,7 +26,7 @@ email: mirror.monster.music@gmail.com
   # ideas: include genre descriptors, similar bands/influences
 description: >- # this means to ignore newlines until "baseurl:"
   Mirror Monster is David Minnix and Michael Skib. 
-  We are an Ann Arbor, MI based band creating electronic music that has an ethereal nostalgia with elements of chaos, noise, and chance. 
+  We are an Ann Arbor, MI based band creating songs that navigate the spaces between electronic dance music, experimental, pop, and folk. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
