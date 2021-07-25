@@ -1,0 +1,319 @@
+--- 
+--- 
+@import "{{site.theme}}";
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-only {
+    @media (min-width: 600px) and (max-width: 1200px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}
+
+@font-face {
+    font-family: "OCR-B";
+    src: url(/assets/fonts/OCR-B.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Square-Bold";
+    src: url(/assets/fonts/Square-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Square-Regular";
+    src: url(/assets/fonts/Square-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Square-Light";
+    src: url(/assets/fonts/Square-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Glitch";
+    src: url(/assets/fonts/Rubik-Glitch-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Nevermind-Regular";
+    src: url(/assets/fonts/NeverMind-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LeJerk-Regular";
+    src: url(/assets/fonts/LeJerk-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Modelo-GX";
+    src: url(/assets/fonts/ModeloGX.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Badlands";
+    src: url(/assets/fonts/Badlands.ttf) format("truetype");
+}
+
+
+
+
+.site-header{
+    border-bottom-width: 0;
+}
+
+.site-footer{
+    border-top-width: 0;
+}
+// body {
+//     font-family: 'Nevermind-Regular';
+//     height: 100%;
+// }
+// .bg{
+//     min-height: 5em;
+// }
+body {
+    font-family: 'Nevermind-Regular';
+    width: 100%;
+    height: 100%; 
+    // display: inline;
+    // z-index: -1;
+    // overflow: auto;
+    // background-repeat: repeat-y;
+
+
+    @include for-tablet-portrait-up{
+        background-image: url(/assets/images/background.png);
+        background-position: center;
+        background-size: 100% auto;
+        // position: absolute;
+        background-position-y: 4.1em;
+        background-repeat: no-repeat;
+        opacity:0.9;
+    };
+
+    @include for-tablet-landscape-up{
+        background-position-y: 3em;
+    }
+
+    @include for-desktop-up{
+        background-position-y: 1.1em;
+        // background-position-y: 2em;
+
+    }
+    
+}
+
+$background: #ffffffde;
+
+.page-content>.wrapper{
+    background-color: $background;
+    padding: 1em;
+}
+
+.site-header{
+    background-color: $background;
+}
+
+footer{
+    background-color: $background;
+}
+
+// experimental
+
+
+@mixin glitch {
+    position: relative;
+    // color: rgb(255, 255, 255);
+    
+
+  &:before,
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0.6;
+    // mix-blend-mode: overlay;
+    clip: rect(0, 0, 0, 0);
+  }
+  &:before {
+    left: -0.1em;
+    text-shadow: 0.1em 0 rgba(255, 0, 0, 0.8);
+    //font-size: xx-large;
+  }
+  &:after {
+    left: 0.1em;
+    text-shadow: -0.1em 0 rgba(0, 89, 255, 0.7);
+  }
+  &:hover:before {
+    text-shadow: 0.11em 0 rgba(255, 0, 0, 0.8);
+    animation: glitch-loop-1 0.9s infinite alternate-reverse; //ease-in-out alternate-reverse;
+  }
+  &:hover:after {
+    text-shadow: -.5em 0 rgba(0, 0, 255, 0.7);
+    animation: glitch-loop-2 0.8s infinite alternate-reverse;//ease-in-out alternate-reverse;
+  }
+}
+  @keyframes glitch-loop-1 {
+    0% {
+      clip: rect(0.36em, 9999px, 0.09em, 0);
+    }
+    25% {
+      top: 0.5em;
+      clip: rect(0.25em, 9999px, 0.399em, 0);
+    }
+    50% {
+      clip: rect(0.50em, 9999px, 0.102em, 0.3);
+    }
+    75% {
+      clip: rect(0.30em, 9999px, 0.42em, 0);
+    }
+
+    100% {
+        clip: rect(0.30em, 9999px, 0.09em, 0);
+    }
+    // 100% {
+    //   clip: rect(0.91em, 9999px, 0.98em, 0);
+    // }
+  }
+  @keyframes glitch-loop-2 {
+    0% {
+      top: -0.1em;
+      left: 0.1em;
+      clip: rect(0.65em, 9999px, 1.19em, 0);
+    }
+    25% {
+      top: -0.6em;
+      left: 0.4em;
+      clip: rect(0.79em, 9999px, 0.19em, 0);
+    }
+    50% {
+      top: -0.3em;
+      left: 0.2em;
+      clip: rect(0.68em, 9999px, 0.11em, 0);
+    }
+    75% {
+      top: 0.0em;
+      left: -0.4em;
+      clip: rect(0.95em, 9999px, 0.53em, 0);
+    }
+    100% {
+        top: 0.1em;
+        left: -0.4em;
+        clip: rect(0.95em, 9999px, 0.5em, 0);
+      }
+    // 100% {
+    //   top: -0.1em;
+    //   left: -.1em;
+    //   clip: rect(0.31em, 9999px, 1.49em, 0);
+    // }
+}
+
+
+// end experiemntal
+
+.page-link {
+    font-family: 'OCR-B';
+    font-size: large;
+    @include glitch();
+}
+
+.site-title{
+    font-family: "Badlands";
+    font-size: 36pt;
+    text-decoration: none !important;
+
+    @include glitch();
+
+    // font-family: "Glitch";
+    // font-size: 45pt;
+
+    // font-family: "LeJerk-Regular";
+    // font-size: 45pt;
+
+}
+
+.post-title{
+    font-family: 'OCR-B';
+    font-size: 24pt;
+}
+
+.footer-col-wrapper{
+    font-size: x-small;
+}
+
+.div--player-container-wrapper{
+    margin:auto; width: 85%;
+    @include for-phone-only{
+        width: 90%;
+    };
+}
+
+
+// html {
+//     height:100%;
+//     box-sizing: border-box;
+// }
+// * {
+//     box-sizing: inherit;
+// }
+// body{
+//     grid-template-rows: auto 1fr auto;
+//     min-height: 100%;
+//     display: grid;
+// }
+// main {
+//     height: 100%;
+// }
+.page-content>.wrapper{
+    margin:auto;
+    width: 84%;
+    @include for-tablet-portrait-up{
+        width:70%;
+    }
+    @include for-tablet-landscape-up{
+        width: 84%;
+    }
+}
+
+.iframe--player-container {
+    margin:auto; border: 0; 
+    width: 350px; height: 350px;
+    @include for-phone-only{
+        width: 100%; height: 8em;
+    };
+    @include for-tablet-only{
+        width: 100%; height: 8em;
+    };
+    @include for-desktop-up{
+        width: 100%; height: 8em;
+    };
+
+}
+
+.li--span-date {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 100%;
+}
+
+.li--span-location {
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+
