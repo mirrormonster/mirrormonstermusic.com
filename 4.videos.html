@@ -1,0 +1,21 @@
+---
+layout: default
+title: videos
+---
+
+<header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <!-- {% include booking-message.html%} -->
+</header>
+
+<article>
+
+    {% for video in site.data.videos %}
+    <h2>{{video.title}}</h2>
+
+    <div class="div--video">
+    <iframe class="div--iframe-video" src="{{video.embed_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+  
+</article>

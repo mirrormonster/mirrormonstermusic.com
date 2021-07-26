@@ -27,45 +27,44 @@
 }
 
 @font-face {
-    font-family: "Square-Bold";
-    src: url(/assets/fonts/Square-Bold.ttf) format("truetype");
+    font-family: "Crooked-Bold";
+    src: url(/assets/fonts/CROOKED-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Square-Regular";
-    src: url(/assets/fonts/Square-Regular.ttf) format("truetype");
+    font-family: "Crooked-Regular";
+    src: url(/assets/fonts/CROOKED-Regular.ttf) format("truetype");
 }
 
-@font-face {
-    font-family: "Square-Light";
-    src: url(/assets/fonts/Square-Light.ttf) format("truetype");
-}
+// @font-face {
+//     font-family: "Impossible-Fill";
+//     src: url(/assets/fonts/Imposible_fill.ttf) format("truetype");
+// }
 
-@font-face {
-    font-family: "Glitch";
-    src: url(/assets/fonts/Rubik-Glitch-Regular.ttf) format("truetype");
-}
+// @font-face {
+//     font-family: "Impossible-Outline";
+//     src: url(/assets/fonts/Imposible_outline.ttf) format("truetype");
+// }
+
+// @font-face {
+//     font-family: "Glitch";
+//     src: url(/assets/fonts/Rubik-Glitch-Regular.ttf) format("truetype");
+// }
 
 @font-face {
     font-family: "Nevermind-Regular";
     src: url(/assets/fonts/NeverMind-Regular.ttf) format("truetype");
 }
 
-@font-face {
-    font-family: "LeJerk-Regular";
-    src: url(/assets/fonts/LeJerk-Regular.ttf) format("truetype");
-}
+// @font-face {
+//     font-family: "Badlands";
+//     src: url(/assets/fonts/Badlands.ttf) format("truetype");
+// }
 
-@font-face {
-    font-family: "Modelo-GX";
-    src: url(/assets/fonts/ModeloGX.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Badlands";
-    src: url(/assets/fonts/Badlands.ttf) format("truetype");
-}
-
+// @font-face {
+//     font-family: "Ferrite-Core-Regular";
+//     src: url(/assets/fonts/FerriteCore-Regular.ttf);
+// }
 
 .site-logo{
     width: auto;
@@ -204,7 +203,7 @@ footer{
       clip: rect(0.25em, 9999px, 0.399em, 0);
     }
     50% {
-      clip: rect(0.50em, 9999px, 0.102em, 0.3);
+      clip: rect(0.50em, 9999px, 0.102em, 0.3em);
     }
     75% {
       clip: rect(0.30em, 9999px, 0.42em, 0);
@@ -260,21 +259,34 @@ footer{
 }
 
 .site-title{
-    font-family: "Badlands";
+    // font-family: "Badlands";
+    // font-size: 36pt;
+
+
+    // margin-top: 0.3em;
+    // font-family: "Impossible-Outline";
+    // font-size: 72pt;
+
+    font-family: "Crooked-Bold";
     font-size: 36pt;
+    text-transform: uppercase;
+
+    // font-family: "Ferrite-Core-Regular";
+    // font-size: 45pt;
+    // text-transform: uppercase;
+
     text-decoration: none !important;
 
-   @include glitch();
+    @include glitch();
 
-   @include for-phone-only{
+    @include for-phone-only{
         font-size: 34pt;
-   }
+    }
 
     // font-family: "Glitch";
     // font-size: 45pt;
 
-    // font-family: "LeJerk-Regular";
-    // font-size: 45pt;
+  
 
 }
 
@@ -359,4 +371,24 @@ footer{
     font-size: 80%;
 }
 
+.nav--span-seperator {
+    opacity: 0.2;
+    
+}
 
+.div--video{
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px; height: 0; overflow: hidden; 
+    margin-bottom: 3em;
+}
+
+.div--iframe-video{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    // width: 560; 
+    // height: 315;
+    // margin: auto;
+}
