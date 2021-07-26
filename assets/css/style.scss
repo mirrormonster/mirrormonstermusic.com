@@ -67,10 +67,23 @@
 }
 
 
-
+.site-logo{
+    width: auto;
+    height: auto;
+    align-self: center;
+    // width: 20em;
+    // height: 5em;
+    overflow: hidden;
+    margin: -92px -120px -105px -42px;
+}
 
 .site-header{
     border-bottom-width: 0;
+    @include for-tablet-portrait-up{
+        position: sticky;
+        top: 0;
+    }
+    
 }
 
 .site-footer{
@@ -87,18 +100,26 @@ body {
     font-family: 'Nevermind-Regular';
     width: 100%;
     height: 100%; 
-    // display: inline;
-    // z-index: -1;
-    // overflow: auto;
-    // background-repeat: repeat-y;
+}
 
+.bg{
+    // display: inline;
+    z-index: -1;
+    overflow: hidden;
+    // background-repeat: repeat-y;
+    position: fixed;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
 
     @include for-tablet-portrait-up{
-        background-image: url(/assets/images/background.png);
+        background-image: url(/assets/images/background-scroll.png);
         background-position: center;
         background-size: 100% auto;
         // position: absolute;
+        // background-position-y: 5.5em;
         background-position-y: 4.1em;
+        // background-repeat: repeat-y;
         background-repeat: no-repeat;
         opacity:0.9;
     };
@@ -108,8 +129,8 @@ body {
     }
 
     @include for-desktop-up{
+        // background-position-y: 2.5em;
         background-position-y: 1.1em;
-        // background-position-y: 2em;
 
     }
     
@@ -117,9 +138,16 @@ body {
 
 $background: #ffffffde;
 
+// body{
+//     overflow-y: hidden;
+// }
+
+
+
 .page-content>.wrapper{
     background-color: $background;
     padding: 1em;
+    // overflow-y: scroll;
 }
 
 .site-header{
@@ -236,7 +264,11 @@ footer{
     font-size: 36pt;
     text-decoration: none !important;
 
-    @include glitch();
+   @include glitch();
+
+   @include for-phone-only{
+        font-size: 34pt;
+   }
 
     // font-family: "Glitch";
     // font-size: 45pt;
@@ -244,6 +276,12 @@ footer{
     // font-family: "LeJerk-Regular";
     // font-size: 45pt;
 
+}
+
+.header--h2-booking-message{
+    @include for-phone-only{
+        font-size: 90%;
+    }
 }
 
 .post-title{
@@ -260,6 +298,11 @@ footer{
     @include for-phone-only{
         width: 90%;
     };
+}
+
+.p--img-photo{
+    opacity: 1.0 !important;
+    
 }
 
 

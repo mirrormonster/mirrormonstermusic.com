@@ -1,49 +1,65 @@
-- name: All Hands Active 10th Anniversity Party
-  location: All Hands Active, Ann Arbor, MI
-  date: November 23rd, 2019
+- name: Annual Homeless Shelter Benefit Concert
+  location: The Blind Pig, Ann Arbor, MI
+  date: January 23rd, 2020
 
-- name: Synth Expo
-  location: Ann Arbor District Library, Ann Arbor, MI
-  date: November 9th, 2019
+- name: Ypsilanti Fine Arts Guild
+  location: Ypsilanti Fine Arts Guild, Ann Arbor, MI
+  date: October 6th, 2019
 
-- name: Unrecordables 2
-  location: Wayne State University, Detroit, MI
-  date: October 19th, 2019
+- name: The Blind Pig
+  location: The Blind Pig, Ann Arbor, MI
+  date: September 27th, 2019
 
-- name: Babe Island Fest(Water Hill In Exile on Main St.)
-  location: N. Main St., Ann Arbor, MI
-  date: May 5th, 2019
+- name: Live @ Encore Records
+  location: Encore Records, Ann Arbor, MI
+  date: June 15th, 2019
 
-- name: North Coast Modular Collective Showcase
-  location: Ann Arbor Public Library, Ann Arbor, MI
-  date: October 24th, 2018
+# - name: All Hands Active 10th Anniversity Party
+#   location: All Hands Active, Ann Arbor, MI
+#   date: November 23rd, 2019
 
-- name: Riverside Tech Show
-  location: Riverside Art Center, Ypsilanti, MI
-  date: August 8th, 2018
+# - name: Synth Expo
+#   location: Ann Arbor District Library, Ann Arbor, MI
+#   date: November 9th, 2019
 
-- location: Cultivate Coffee, Ypsilanti, MI
-  date: May 24th, 2018
+# - name: Unrecordables 2
+#   location: Wayne State University, Detroit, MI
+#   date: October 19th, 2019
 
-- location: Electric Eye Coffee, Ann Arbor, MI
-  date: May 6th, 2018
-  name: Foothills Music Festival
+# - name: Babe Island Fest(Water Hill In Exile on Main St.)
+#   location: N. Main St., Ann Arbor, MI
+#   date: May 5th, 2019
 
-- location: Necto, Ann Arbor, MI
-  date: April 4th, 2017
+# - name: North Coast Modular Collective Showcase
+#   location: Ann Arbor Public Library, Ann Arbor, MI
+#   date: October 24th, 2018
 
-- name: North Coast Modular Collective Showcase
-  location: Dreamland Theatre, Ypsilanti, MI
-  date: October 14th, 2017
+# - name: Riverside Tech Show
+#   location: Riverside Art Center, Ypsilanti, MI
+#   date: August 8th, 2018
 
-- name: Planet Funk
-  location: Urban Bean Co., Detroit, MI
-  date: October 4th, 2017
+# - location: Cultivate Coffee, Ypsilanti, MI
+#   date: May 24th, 2018
 
-- name: Make Music Detroit
-  location: Urban Bean Co., Detroit, MI
-  date: July 2nd, 2017
+# - location: Electric Eye Coffee, Ann Arbor, MI
+#   date: May 6th, 2018
+#   name: Foothills Music Festival
 
-- name: Dally in the Alley
-  location: Detroit
-  date: September 10th, 2016
+# - location: Necto, Ann Arbor, MI
+#   date: April 4th, 2017
+
+# - name: North Coast Modular Collective Showcase
+#   location: Dreamland Theatre, Ypsilanti, MI
+#   date: October 14th, 2017
+
+# - name: Planet Funk
+#   location: Urban Bean Co., Detroit, MI
+#   date: October 4th, 2017
+
+# - name: Make Music Detroit
+#   location: Urban Bean Co., Detroit, MI
+#   date: July 2nd, 2017
+
+# - name: Dally in the Alley
+#   location: Detroit
+#   date: September 10th, 2016
