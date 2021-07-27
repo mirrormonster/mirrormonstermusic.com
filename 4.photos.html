@@ -18,6 +18,11 @@ permalink: /photos/
             <span>{{photo.caption}}</span>
             <span>-</span>
             <span>{{photo.date}}</span>
+            {% if photo.credit %} 
+            <!-- <span>-</span> -->
+            <br/>
+            <span class="p--photo-credit">{{photo.credit}}</span>
+            {% endif %}
             <!-- <span class="li--span-date ">{{ show.date }}</span>
             {% if show.name %}
             <span class="li--span-name "> <span class="li--span-seperator">__</span> {{ show.name }}</span>
