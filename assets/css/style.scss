@@ -254,8 +254,18 @@ footer{
 
 .page-link {
     font-family: 'OCR-B';
-    font-size: large;
+    font-size: 12pt;
+    // font-size: large;
     @include glitch();
+    margin: 1em !important;
+}
+
+.site-nav{
+    @include for-tablet-portrait-up{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 .site-title{
@@ -268,7 +278,7 @@ footer{
     // font-size: 72pt;
 
     font-family: "Crooked-Bold";
-    font-size: 36pt;
+    font-size: 48pt;
     text-transform: uppercase;
 
     // font-family: "Ferrite-Core-Regular";
@@ -277,10 +287,22 @@ footer{
 
     text-decoration: none !important;
 
+    @include for-tablet-portrait-up{
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        float: none;
+        
+        text-align: center;
+    }
+
+    top: 0.2em;
+    
+
     @include glitch();
 
     @include for-phone-only{
-        font-size: 34pt;
+        font-size: 48pt;
     }
 
     // font-family: "Glitch";
@@ -288,6 +310,13 @@ footer{
 
   
 
+}
+
+.nav--span-seperator{
+    text-align: center;
+    @include for-phone-only{
+        display: none;
+    }
 }
 
 .header--h2-booking-message{
