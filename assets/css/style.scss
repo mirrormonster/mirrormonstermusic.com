@@ -87,6 +87,7 @@
 
 .site-footer{
     border-top-width: 0;
+    padding-bottom: 0;
 }
 // body {
 //     font-family: 'Nevermind-Regular';
@@ -424,4 +425,7 @@ footer{
 
 .p--photo-credit{
     font-size: small;
+}
+.footer--p-credit{
+    margin-bottom: 0;
 }
