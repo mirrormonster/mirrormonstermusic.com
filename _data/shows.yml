@@ -1,3 +1,11 @@
+- name: Whip Jams Concert
+  location: The Blind Pig, Ann Arbor, MI
+  date: September 11th, 2021
+
+- name: Unity Vibration
+  location: Unity Vibration, Ypsilanti, MI
+  date: September 4th, 2020
+
 - name: Annual Homeless Shelter Benefit Concert
   location: The Blind Pig, Ann Arbor, MI
   date: January 23rd, 2020
@@ -6,9 +14,8 @@
   # location: PJ's Lager House, Detroit, MI
   # date: October 6th, 2019
 
-
 - name: Ypsilanti Fine Arts Guild
-  location: Ypsilanti Fine Arts Guild, Ann Arbor, MI
+  location: Ypsilanti Fine Arts Guild, Ypsilanti, MI
   date: October 6th, 2019
 
 - name: The Blind Pig
