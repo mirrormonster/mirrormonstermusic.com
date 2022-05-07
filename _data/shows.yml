@@ -1,3 +1,7 @@
+- name: V/oct April
+  location: The Last Word, Ann Arbor, MI
+  date: April 27th, 2021
+
 - name: Whip Jams Concert
   location: The Blind Pig, Ann Arbor, MI
   date: September 11th, 2021
@@ -11,8 +15,8 @@
   date: January 23rd, 2020
 
   # - name: ???
-  # location: PJ's Lager House, Detroit, MI
-  # date: October 6th, 2019
+  location: PJ's Lager House, Detroit, MI
+  date: October 11th, 2019
 
 - name: Ypsilanti Fine Arts Guild
   location: Ypsilanti Fine Arts Guild, Ypsilanti, MI
